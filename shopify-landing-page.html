@@ -334,6 +334,83 @@
       font-size: 0.9rem;
     }
     
+    /* YOUTUBE SECTION */
+    .youtube-section {
+      padding: 80px 20px;
+      background: #fff;
+      text-align: center;
+    }
+    .youtube-section h2 {
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      margin-bottom: 15px;
+      color: #0D1B2A;
+    }
+    .youtube-section p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 25px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .youtube-section .youtube-btn {
+      background: #FF0000;
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .youtube-section .small {
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 15px;
+    }
+    
+    /* EMAIL CAPTURE */
+    .email-capture {
+      padding: 80px 20px;
+      background: #F1FAEE;
+      text-align: center;
+    }
+    .email-capture h2 {
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      margin-bottom: 15px;
+      color: #0D1B2A;
+    }
+    .email-capture p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 25px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .email-form {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .email-form input {
+      flex: 1;
+      min-width: 200px;
+      padding: 15px 20px;
+      font-size: 1rem;
+      border: 2px solid #ddd;
+      border-radius: 50px;
+    }
+    .email-form input:focus {
+      outline: none;
+      border-color: #E63946;
+    }
+    .email-capture .small {
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 15px;
+    }
+    
     @media (max-width: 600px) {
       .creator-content { flex-direction: column; text-align: center; }
       .creator-avatar { margin: 0 auto; }
@@ -531,6 +608,27 @@
   <h2>Ready to Transform Your Breathing?</h2>
   <p>20 minutes once will convince you — or your money back.</p>
   <a href="#" class="cta-btn">Get Instant Access Now →</a>
+</section>
+
+<!-- YOUTUBE SUBSCRIBE -->
+<section class="youtube-section">
+  <h2>Subscribe on YouTube for Free Guides</h2>
+  <p>Get free guided breathing sessions, tutorials, and tips on our official channel.</p>
+  <a href="https://youtube.com/@CoherentBreathing" target="_blank" class="cta-btn youtube-btn">
+    📺 Subscribe on YouTube →
+  </a>
+  <p class="small">Click to subscribe — free content, no strings attached.</p>
+</section>
+
+<!-- EMAIL CAPTURE -->
+<section class="email-capture">
+  <h2>Get Free Breathing Tips & Updates</h2>
+  <p>Join our newsletter for weekly tips on coherent breathing, stress relief, and wellness.</p>
+  <form class="email-form" action="#" method="POST">
+    <input type="email" name="email" placeholder="Enter your email" required>
+    <button type="submit" class="cta-btn">Get Free Tips →</button>
+  </form>
+  <p class="small">🔒 We respect your privacy. No spam, ever.</p>
 </section>
 
 <!-- FOOTER -->
