@@ -1,0 +1,10 @@
+{
+  "manifest": {
+    "version": 1,
+    "files": {
+      "index.html": {
+        "hash": "e744044d5d5de7d776793cfa4790a33961b472b73cd1532516bd9c3c996edc98"
+      }
+    }
+  }
+}
