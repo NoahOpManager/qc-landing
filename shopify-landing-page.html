@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum Coherence | The Original Coherent Breathing Method</title>
+  <meta name="description" content="Learn the original Coherent Breathing method - featured in James Nestor's 'Breath'. Simple, scientifically-proven breathing technique.">
+  <style>
+    /* RESET & BASE */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; }
+    a { text-decoration: none; }
+    
+    /* HERO SECTION */
+    .hero {
+      background: linear-gradient(135deg, #0D1B2A 0%, #1B263B 100%);
+      color: #fff;
+      padding: 100px 20px;
+      text-align: center;
+      min-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 700;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+    .hero .subhead {
+      font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+      opacity: 0.9;
+      margin-bottom: 35px;
+      max-width: 650px;
+    }
+    .hero .cta-btn {
+      display: inline-block;
+      background: #E63946;
+      color: #fff;
+      padding: 18px 45px;
+      font-size: 1.15rem;
+      font-weight: 600;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(230,57,70,0.4);
+    }
+    .hero .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(230,57,70,0.5);
+    }
+    .hero .guarantee {
+      margin-top: 25px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+    
+    /* AUTHORITY STRIP */
+    .authority-strip {
+      background: #1B263B;
+      padding: 25px 15px;
+      text-align: center;
+    }
+    .authority-strip p {
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 15px;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .authority-strip .badges {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .authority-strip .badge {
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+    }
+    
+    /* ORIGIN STORY */
+    .origin-section {
+      padding: 80px 20px;
+      background: #fff;
+      text-align: center;
+    }
+    .origin-section h2 {
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      margin-bottom: 25px;
+      color: #0D1B2A;
+    }
+    .origin-section p {
+      font-size: 1.15rem;
+      max-width: 700px;
+      margin: 0 auto 15px;
+      color: #555;
+    }
+    .origin-section .highlight {
+      color: #E63946;
+      font-weight: 600;
+    }
+    
+    /* WHAT IS IT */
+    .what-is-section {
+      padding: 80px 20px;
+      background: #F1FAEE;
+    }
+    .what-is-section h2 {
+      text-align: center;
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      margin-bottom: 45px;
+      color: #0D1B2A;
+    }
+    .what-is-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .what-is-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+    }
+    .what-is-card h3 {
+      color: #E63946;
+      margin-bottom: 12px;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .what-is-card h3 span { font-size: 1.5rem; }
+    .what-is-card p { color: #555; }
+    
+    /* BENEFITS */
+    .benefits-section {
+      padding: 80px 20px;
+      background: #0D1B2A;
+      color: #fff;
+    }
+    .benefits-section h2 {
+      text-align: center;
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      margin-bottom: 45px;
+    }
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .benefit-item {
+      text-align: center;
+      padding: 25px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+    }
+    .benefit-item .icon { font-size: 2.2rem; margin-bottom: 12px; }
+    .benefit-item h3 { margin-bottom: 8px; font-size: 1.1rem; }
+    .benefit-item p { font-size: 0.9rem; opacity: 0.8; }
+    
+    /* SCIENCE */
+    .science-section {
+      padding: 80px 20px;
+      background: #fff;
+    }
+    .science-section h2 {
+      text-align: center;
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      margin-bottom: 40px;
+    }
+    .science-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .science-item {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      padding: 25px;
+      background: #F8F9FA;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    .science-item .icon { font-size: 2rem; }
+    .science-item h3 { margin-bottom: 8px; color: #0D1B2A; }
+    .science-item p { color: #555; }
+    
+    /* CREATOR */
+    .creator-section {
+      padding: 80px 20px;
+      background: #F1FAEE;
+    }
+    .creator-section h2 {
+      text-align: center;
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      margin-bottom: 40px;
+    }
+    .creator-content {
+      max-width: 750px;
+      margin: 0 auto;
+      display: flex;
+      gap: 35px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .creator-avatar {
+      width: 150px;
+      height: 150px;
+      background: #0D1B2A;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      flex-shrink: 0;
+    }
+    .creator-info h3 {
+      font-size: 1.6rem;
+      color: #0D1B2A;
+      margin-bottom: 10px;
+    }
+    .creator-info p { margin-bottom: 12px; color: #555; }
+    
+    /* TESTIMONIALS */
+    .testimonials-section {
+      padding: 80px 20px;
+      background: #fff;
+    }
+    .testimonials-section h2 {
+      text-align: center;
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      margin-bottom: 40px;
+    }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .testimonial-card {
+      background: #F8F9FA;
+      padding: 25px;
+      border-radius: 12px;
+      border-left: 4px solid #E63946;
+    }
+    .testimonial-card .quote {
+      font-style: italic;
+      font-size: 1rem;
+      margin-bottom: 15px;
+      color: #444;
+    }
+    .testimonial-card .author {
+      font-weight: 600;
+      color: #0D1B2A;
+    }
+    .testimonial-card .credentials {
+      font-size: 0.85rem;
+      color: #888;
+    }
+    
+    /* COMPARISON */
+    .comparison-section {
+      padding: 80px 20px;
+      background: #0D1B2A;
+      color: #fff;
+    }
+    .comparison-section h2 {
+      text-align: center;
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      margin-bottom: 40px;
+    }
+    .comparison-table {
+      width: 100%;
+      max-width: 750px;
+      margin: 0 auto;
+      border-collapse: collapse;
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .comparison-table th,
+    .comparison-table td {
+      padding: 18px;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+    .comparison-table th { background: rgba(255,255,255,0.1); }
+    .comparison-table .us { background: rgba(230,57,70,0.2); }
+    .comparison-table .check { color: #4ADE80; font-weight: bold; }
+    
+    /* FINAL CTA */
+    .final-cta {
+      padding: 100px 20px;
+      background: linear-gradient(135deg, #E63946 0%, #C1121F 100%);
+      color: #fff;
+      text-align: center;
+    }
+    .final-cta h2 {
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      margin-bottom: 15px;
+    }
+    .final-cta p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      opacity: 0.9;
+    }
+    .cta-buttons { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 20px; }
+    .final-cta .cta-btn {
+      display: inline-block;
+      background: #fff;
+      color: #E63946;
+      padding: 20px 55px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      border-radius: 50px;
+    }
+    .cta-btn-secondary {
+      background: #0D1B2A !important;
+      color: #fff !important;
+    }
+    
+    /* FOOTER */
+    footer {
+      padding: 40px 20px;
+      background: #1B263B;
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    
+    /* YOUTUBE SECTION */
+    .youtube-section {
+      padding: 80px 20px;
+      background: #fff;
+      text-align: center;
+    }
+    .youtube-section h2 {
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      margin-bottom: 15px;
+      color: #0D1B2A;
+    }
+    .youtube-section p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 25px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .youtube-section .youtube-btn {
+      background: #FF0000;
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .youtube-section .small {
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 15px;
+    }
+    
+    /* EMAIL CAPTURE */
+    .email-capture {
+      padding: 80px 20px;
+      background: #F1FAEE;
+      text-align: center;
+    }
+    .email-capture h2 {
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      margin-bottom: 15px;
+      color: #0D1B2A;
+    }
+    .email-capture p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 25px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .email-form {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .email-form input {
+      flex: 1;
+      min-width: 200px;
+      padding: 15px 20px;
+      font-size: 1rem;
+      border: 2px solid #ddd;
+      border-radius: 50px;
+    }
+    .email-form input:focus {
+      outline: none;
+      border-color: #E63946;
+    }
+    .email-capture .small {
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 15px;
+    }
+    
+    @media (max-width: 600px) {
+      .creator-content { flex-direction: column; text-align: center; }
+      .creator-avatar { margin: 0 auto; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>The Original Coherent Breathing Method</h1>
+  <p class="subhead">The exact technique from James Nestor's bestseller "Breath" — now available direct from the source.</p>
+  <a href="https://coherent-breathing.myshopify.com/products/respire-1?variant=48125284876388" class="cta-btn">Get RESPIRE-1 ($20) →</a>
+  <p class="guarantee">✓ Instant Digital Download &nbsp;|&nbsp; 30-Day Money-Back Guarantee &nbsp;|&nbsp; 25-Min Video + PDF Guide</p>
+</section>
+
+<!-- WHAT'S INCLUDED -->
+<section style="padding: 40px 20px; background: #fff; text-align: center;">
+  <h3 style="font-size: 1.4rem; margin-bottom: 15px; color: #0D1B2A;">What's Included</h3>
+  <p style="font-size: 1.1rem; color: #555; max-width: 600px; margin: 0 auto;">🎯 <strong>25-minute guided video</strong> — Step-by-step instruction<br>
+  📄 <strong>PDF Quick-Start Guide</strong> — Print & reference<br>
+  ⏱️ <strong>5-minute daily practice</strong> — That's it</p>
+</section>
+
+<!-- AUTHORITY -->
+<section class="authority-strip">
+  <p>As Featured In</p>
+  <div class="badges">
+    <span class="badge">📖 James Nestor's "Breath"</span>
+    <span class="badge">🧠 Huberman Lab Podcast</span>
+    <span class="badge">🎙️ Ben Greenfield Podcast</span>
+    <span class="badge">🏥 Used in VA Hospitals</span>
+  </div>
+</section>
+
+<!-- ORIGIN -->
+<section class="origin-section">
+  <h2>Who Taught James Nestor?</h2>
+  <p>James Nestor wrote the bestseller <span class="highlight">"Breath"</span> — but he didn't invent this method.</p>
+  <p>He found <span class="highlight">Dr. Patricia Gerbarg</span>, who promotes <span class="highlight">OUR original technique</span>.</p>
+  <p>Now learn it directly from the source.</p>
+</section>
+
+<!-- WHAT IS -->
+<section class="what-is-section">
+  <h2>What Is Coherent Breathing?</h2>
+  <div class="what-is-grid">
+    <div class="what-is-card">
+      <h3><span>⏱️</span> The Method</h3>
+      <p>5.5 seconds inhale, 5.5 seconds exhale. That's 5 breaths per minute. Simple but powerful.</p>
+    </div>
+    <div class="what-is-card">
+      <h3><span>🧠</span> The Science</h3>
+      <p>At this rhythm, your nervous system achieves perfect balance between fight and rest modes.</p>
+    </div>
+    <div class="what-is-card">
+      <h3><span>⏱️</span> Just 5 Minutes</h3>
+      <p>5-10 minutes daily. No equipment. No subscriptions. Just breathing.</p>
+    </div>
+    <div class="what-is-card">
+      <h3><span>🔬</span> Peer-Reviewed</h3>
+      <p>Backed by research including a 400-person randomized controlled trial (Scientific Reports 2023).</p>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits-section">
+  <h2>What You'll Experience</h2>
+  <div class="benefits-grid">
+    <div class="benefit-item">
+      <div class="icon">😴</div>
+      <h3>Better Sleep</h3>
+      <p>Train your nervous system to wind down naturally</p>
+    </div>
+    <div class="benefit-item">
+      <div class="icon">🧘</div>
+      <h3>Stress Relief</h3>
+      <p>Activate relaxation on demand</p>
+    </div>
+    <div class="benefit-item">
+      <div class="icon">🎯</div>
+      <h3>Improved Focus</h3>
+      <p>Clear brain fog and enhance clarity</p>
+    </div>
+    <div class="benefit-item">
+      <div class="icon">❤️</div>
+      <h3>Better HRV</h3>
+      <p>Optimize heart rate variability</p>
+    </div>
+    <div class="benefit-item">
+      <div class="icon">😤</div>
+      <h3>Emotional Balance</h3>
+      <p>Navigate stress with ease</p>
+    </div>
+    <div class="benefit-item">
+      <div class="icon">⚡</div>
+      <h3>More Energy</h3>
+      <p>Feel grounded and energized</p>
+    </div>
+  </div>
+</section>
+
+<!-- SCIENCE -->
+<section class="science-section">
+  <h2>The Science</h2>
+  <div class="science-content">
+    <div class="science-item">
+      <div class="icon">🔬</div>
+      <div>
+        <h3>Circulatory Function</h3>
+        <p>Your diaphragm pumps blood, not just air. At 5 breaths/min, the Valsalva Wave enters your brain. Confirmed via EEG in 2013.</p>
+      </div>
+    </div>
+    <div class="science-item">
+      <div class="icon">🧠</div>
+      <div>
+        <h3>Brain Optimization</h3>
+        <p>"Everything measurable in the lab is optimized by Coherent Breathing...stays optimized for hours after just 10 minutes." — Dr. Richard Brown, MD, Columbia</p>
+      </div>
+    </div>
+    <div class="science-item">
+      <div class="icon">📊</div>
+      <div>
+        <h3>Peer-Reviewed Research</h3>
+        <p>Scientific Reports (2023): 400 participants, 10 min/day for 4 weeks. Showed improvements in stress, anxiety, and wellbeing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CREATOR -->
+<section class="creator-section">
+  <h2>The Creator</h2>
+  <div class="creator-content">
+    <div class="creator-avatar">👨‍🔬</div>
+    <div class="creator-info">
+      <h3>Stephen Elliott — The Original Creator</h3>
+      <p>Discovered Coherent Breathing in 2005 while searching for a protocol that reliably elicits the Awakened Mind brainwave pattern.</p>
+      <p>His method is referenced in James Nestor's "Breath" and taught by Dr. Patricia Gerbarg & Dr. Richard Brown at Columbia University.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section">
+  <h2>What People Are Saying</h2>
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <p class="quote">"Everything measurable in the lab is optimized by Coherent Breathing...stays optimized for hours after just 10 minutes."</p>
+      <p class="author">— Dr. Richard Brown, MD</p>
+      <p class="credentials">Associate Clinical Professor, Columbia University</p>
+    </div>
+    <div class="testimonial-card">
+      <p class="quote">"I can't tell you how much it has helped me... I actually dreaded the dawn of each new day. That has completely changed... LIFE CHANGING!!!"</p>
+      <p class="author">— January, 2023</p>
+    </div>
+    <div class="testimonial-card">
+      <p class="quote">"I coached my 93 year old Mother to do Coherent Breathing. She dropped her breath rate from 15 to 5 in her 1st session. This stuff never stops amazing me."</p>
+      <p class="author">— Beth Abrams, MD</p>
+    </div>
+    <div class="testimonial-card">
+      <p class="quote">"One sees Alpha amplitude increase instantly — with a single first Coherent Breath."</p>
+      <p class="author">— Dr. Elsa Baehr, PhD</p>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON -->
+<section class="comparison-section">
+  <h2>Why Quantum Coherence?</h2>
+  <table class="comparison-table">
+    <tr>
+      <th></th>
+      <th>Quantum Coherence</th>
+      <th>HeartMath</th>
+    </tr>
+    <tr class="us">
+      <td>Price</td>
+      <td style="color:#4ADE80;font-weight:bold;">$XX Digital</td>
+      <td>$200+ Device + Sub</td>
+    </tr>
+    <tr>
+      <td>Origin</td>
+      <td style="color:#4ADE80;font-weight:bold;">Original (Since 2005)</td>
+      <td>Derived</td>
+    </tr>
+    <tr class="us">
+      <td>In "Breath" Book</td>
+      <td style="color:#4ADE80;font-weight:bold;">✓ Yes</td>
+      <td>✗ No</td>
+    </tr>
+    <tr>
+      <td>Peer-Reviewed</td>
+      <td style="color:#4ADE80;font-weight:bold;">✓ Yes</td>
+      <td>Internal Only</td>
+    </tr>
+  </table>
+</section>
+
+<!-- CTA -->
+<section class="final-cta">
+  <h2>Ready to Transform Your Breathing?</h2>
+  <p>20 minutes once will convince you — or your money back.</p>
+  <div class="cta-buttons">
+    <a href="https://coherent-breathing.myshopify.com/products/respire-1?variant=48125284876388" class="cta-btn">Get RESPIRE-1 ($20) →</a>
+  </div>
+  <p style="font-size: 0.9rem; opacity: 0.7; margin-top: 15px;">Also available: The Basics Bundle ($60)</p>
+</section>
+
+<!-- YOUTUBE SUBSCRIBE -->
+<section class="youtube-section">
+  <h2>Subscribe on YouTube for Free Guides</h2>
+  <p>Get free guided breathing sessions, tutorials, and tips on our official channel.</p>
+  <a href="https://youtube.com/@CoherentBreathing" target="_blank" class="cta-btn youtube-btn">
+    📺 Subscribe on YouTube →
+  </a>
+  <p class="small">Click to subscribe — free content, no strings attached.</p>
+</section>
+
+<!-- EMAIL CAPTURE -->
+<section class="email-capture">
+  <h2>Get Free Breathing Tips & Updates</h2>
+  <p>Join our newsletter for weekly tips on coherent breathing, stress relief, and wellness.</p>
+  <form class="email-form" action="#" method="POST">
+    <input type="email" name="email" placeholder="Enter your email" required>
+    <button type="submit" class="cta-btn">Get Free Tips →</button>
+  </form>
+  <p class="small">🔒 We respect your privacy. No spam, ever.</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>quantumcoherence.com &nbsp;|&nbsp; support@quantumcoherence.com</p>
+  <p style="margin-top:10px;">© 2024 Quantum Coherence. All rights reserved.</p>
+</footer>
+
+<!-- FLOATING CTA -->
+<a href="https://coherent-breathing.myshopify.com/products/respire-1?variant=48125284876388" class="cta-btn" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; box-shadow: 0 4px 20px rgba(0,0,0,0.3); font-size: 0.9rem; padding: 12px 25px;">Get RESPIRE-1 ($20)</a>
+
+</body>
+</html>
